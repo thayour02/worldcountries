@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background-color:beige;
+		}
+		#container{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		#container > div {
+			width: 150px;
+			height: 150px;
+			margin: 30px;
+			background-color:orange;
+			align-content: center;
+			padding: 50px 10px 30px 40px;
+			border-radius: 100%;
+
+			
+		}
+		span{
+			display: block;
+		}
+		img{
+		 width: 80%;
+		 
+		}
+		input{
+            width:900px;
+            border-radius: 50px;
+            display: block;
+            height: 25px;
+			margin-left: 200px;
+            outline: none;
+            font-size: 25px;
+        }
+		#title{
+			color: orangered;
+			font-size: 20px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: lighter;
+		}
+		#name{
+			background-color: orange ;
+			width: 200px;
+			height: 40px;
+			border: none;
+			border-radius: 30px;
+		}
+		#capital{
+			background-color: orange ;
+			width: 200px;
+			height: 40px;
+			border: none;
+			border-radius: 30px;
+		}
+		#region{
+			background-color: orange ;
+			width: 200px;
+			height: 40px;
+			border: none;
+			border-radius: 30px;
+		}
+		#butt{
+			display: flex;
+			gap: 30px;
+			align-items: center;
+			margin-left: 250px;
+		}
+	</style>
+</head>
+<body>
+    <input type="text"id="term" placeholder="search by Country, Name, Population, Language, City"/>
+	<h1 id="title"></h1>
+	<div id="butt">
+		<button id="name">Name</button>
+	<button onclick="show()" id="capital">Capital</button>
+	<button id="region">Region</button>
+	</div>
+	<div id="container">
+
+	</div>
+</body>
+</html>
+<script src="../wc/wc-obj.js"></script>
+<script src="../wc/wc-ob-dom.js"></script>
